@@ -5,7 +5,7 @@ import sys
 import os
 if os.name != 'nt':
     sys.path.insert(0, '\conf')
-from config import *
+from config import IP_file, HOST, USER
 
 warnings.filterwarnings("ignore")
 ipaddr = requests.get("https://api.ipify.org").text
